@@ -1,0 +1,12 @@
+node_modules/
+.DS_Store
+
+# Local agent and Beads tooling made by `bd init`, not part of the published package.
+.beads/
+.beads.gate.lock
+.agents/
+.claude/
+.codex/
+.cursor/
+AGENTS.md
+CLAUDE.md

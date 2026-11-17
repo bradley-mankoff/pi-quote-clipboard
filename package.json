@@ -1,0 +1,45 @@
+{
+  "name": "pi-quote-clipboard",
+  "version": "0.2.0",
+  "description": "ctrl+q quotes the macOS clipboard into the pi prompt as a labelled block and leaves the cursor after \"My response:\", so a comment can follow the quote.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Bradley Mankoff",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradley-mankoff/pi-quote-clipboard.git"
+  },
+  "homepage": "https://github.com/bradley-mankoff/pi-quote-clipboard#readme",
+  "bugs": {
+    "url": "https://github.com/bradley-mankoff/pi-quote-clipboard/issues"
+  },
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-extension",
+    "clipboard",
+    "quote",
+    "blockquote"
+  ],
+  "engines": {
+    "node": ">=22.18"
+  },
+  "files": [
+    "extensions",
+    "lib",
+    "README.md",
+    "HANDOFF.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./extensions/index.ts"
+    ]
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.ts\""
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  }
+}
